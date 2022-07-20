@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*------------ HEADER ------------- */
+
+.header {
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 50px;
+}
+
+.iconos-nav .perfil {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    color: #ffffff;
+}
+
+.iconos-nav .contactanos {
+    position: absolute;
+    top: 2rem;
+    right: 7rem;
+    color: #ffffff;
+}
+
+
+/* -----------------MAIN------------------ */
+
+
+.fondo {
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.200)), url(../imagenes/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.fondo h1 {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: white;
+    padding: 30px;
+    border-radius: 1rem;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 500;
+
+}
+
+main .h2 {
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.contenedor {
+    width: 100%;
+    background-color: #eedacd;
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    margin: 2rem;
+    position: relative;
+
+
+}
+
+.card a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card p {
+    position: absolute;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    top: 0;
+    right: 0;
+    border-radius: 0 1rem 0 1rem;
+    background-color: rgba(255, 255, 255, 0.596);
+    padding: 1.5px 5px 1.5px 5px;
+}
+
+/*--------------- FOOTER index---------------*/
+
+footer {
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.foot {
+    text-align: center;
+
+}
+
+.foot .redes a {
+    color: #000;
+    /* Como agrandar el tamano de los iconos? */
+}
+
+
+
+
+
+
+/*------------------ PERFIL | INICIO DE SESION ----------------*/
+
+.main-perfil {
+    font-family: sans-serif;
+    padding: 10rem;
+    position: relative;
+    background-color: antiquewhite;
+    height: 800px;
+
+}
+
+main .div-inicio-sesion {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 23px;
+}
+
+main #contactanos {
+    font-size: 21px;
+    padding: 12.5rem;
+    text-align: center;
+
+}
+
+
+
+
+/* -----------------------TIENDA | main----------------------- */
+
+.fondo-tienda {
+    background: linear-gradient(rgba(0, 0, 0, 0.201), rgba(0, 0, 0, 0.207)), url(../imagenes/shopping.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.main-tienda div h2 {
+    font-size: 80px;
+    font-style: italic;
+    text-align: center;
+    margin: 80px;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+
+/* ----------------------REGISTRARSE | main---------------------- */
+
+.div-main-registro {
+    height: 75vh;
+    background-color: #eedacd;
+    display: block;
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 22px;
+}
+
+
+
+
+/* ---------------------ARMARIO | MAIN | GALERIA----------------- */
+
+.main-armario .fondo-armario {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.206), rgba(0, 0, 0, 0.201)), url(../imagenes/fondoArmario.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-armario .fondo-armario h2 {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: white;
+    padding: 35px;
+    border-radius: 1rem;
+    font-size: 80px;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.galerias {
+    background-color: #eedacd;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.galerias .galeria1 {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-auto-rows: 400px;
+    padding: 50px;
+    gap: 15px;
+    position: relative;
+    justify-content: center;
+}
+.galerias .galeria1 .grid-todo img {
+    width: 100%;
+    height: 100%;
+}
+.galerias .div-h3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.405);
+    color: white;
+    padding: 1.5px 5px 1.5px 5px;
+    border-radius: .6rem;
+    font-size: 30px;
+    font-family: serif;
+    font-style: italic;
+    justify-self: center;
+}
+.galerias .div-h3 a {
+    text-decoration: none;
+    color: white;
+}
+.galerias .gm1 {
+    padding: 20px;
+}
+.galerias .gm2 {
+    padding: 20px;
+}
+.galerias .gm3 {
+    padding: 20px;
+}
+.galerias .gm4 {
+    padding: 20px;
+}
+
+/* --Galeria 2-- */
+
+.galerias .galeria2 {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-auto-rows: 400px;
+    padding: 50px;
+    gap: 15px;
+    position: relative;
+    justify-content: center;
+}
+.galerias .galeria2 .grid-ropa a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--Galeria 3-- */
+.galerias .galeria3 {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-auto-rows: 400px;
+    padding: 50px;
+    gap: 15px;
+    position: relative;
+    justify-content: center;
+}
+.galerias .galeria3 .grid-accesorios a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --Galeria 4-- */
+.galerias .galeria4 {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-auto-rows: 400px;
+    padding: 50px;
+    gap: 15px;
+    position: relative;
+    justify-content: center;
+}
+.galerias .galeria4 .grid-calzado a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ====================MEDIAS QUERIES=================== */
+
+
+@media screen and (max-width:1400px) {
+    main .h2 {
+        font-size: 25px;
+    }
+}
+
+@media  screen and (max-width:1023px){
+    main .h2 {
+        font-size: 20px;
+    }
+    .fondo {
+        font-size: 50px;
+    }
+    .main-tienda div h2 {
+        font-size: 60px;
+    }
+    .main-armario .fondo-armario h2 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width:768px) {
+    main .h2 {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    main .div-inicio-sesion {
+        display: flex;
+        flex-direction: column;
+    }
+    main .div-inicio-sesion .registrarse {
+        margin-top: 50px;
+    }
+    .main-perfil {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8rem;
+        align-items: center;  
+    }
+    main #contactanos {
+        padding-top: 100px;
+    }
+    /* GALERIAS  |  ARMARIO */
+    .galerias .galeria1 {
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+        margin-top: 75px;
+    }
+    .galerias .galeria2 {
+        margin: 0;
+        padding: 0; 
+        padding-top: 50px; 
+        margin-top: 75px;
+    }
+    .galerias .galeria3 {
+        margin: 0;
+        padding: 0;  
+        padding-top: 50px;
+        margin-top: 75px;
+    }
+    .galerias .galeria4 {
+        margin: 0;
+        padding: 0;  
+        padding-top: 50px;
+        margin-top: 75px;
+    }
+ }
+@media screen and (max-width:669px) {
+    .iconos-nav {
+        display: none;
+    }
+    .fondo {
+        font-size: 35px;
+    }
+    .fondo h1 {
+        padding: 25px;
+    }
+    .main-armario .fondo-armario h2 {
+        font-size: 50px;
+        padding: 25px;
+    }
+/* GALERIAS  |  ARMARIO */
+    .galerias .div-h3 a {
+        text-decoration: none;
+        color: white;
+        font-size: 35px;  
+    }
+    .galerias .galeria2 {
+        margin-top: 20px;
+    }
+    .galerias .galeria3 {
+        margin-top: 20px;
+    }
+    .galerias .galeria4 {
+        margin-top: 20px;
+        margin-bottom: 75px;
+    }
+    .galerias .galeria1 .grid-todo {
+        display: none
+    }
+    .galerias .galeria2 .grid-ropa {
+        display: none
+    }
+    .galerias .galeria3 .grid-accesorios {
+        display: none
+    }
+    .galerias .galeria4 .grid-calzado {
+        display: none;
+    }
+
+ }
+ @media screen and (max-width:500px) {
+    .fondo {
+        font-size: 25px;
+    }
+    .main-armario .fondo-armario h2 {
+        font-size: 40px;
+        padding: 25px;
+    }
+ }
