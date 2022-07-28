@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /*------------ HEADER ------------- */
 
 .header {
@@ -50,8 +49,28 @@ nav ul li a {
     color: #ffffff;
 }
 
+/* -------ANIMATION LOGO NAV-------- */
 
-/* -----------------MAIN------------------ */
+.header:hover {
+    background-color: rgba(255, 255, 255, 0.200);
+}
+
+.header {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    0%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/* -----------------MAIN  |  INDEX------------------ */
 
 
 .fondo {
@@ -72,12 +91,12 @@ nav ul li a {
 .fondo h1 {
     background-color: rgba(0, 0, 0, 0.405);
     color: white;
-    padding: 30px;
+    padding: 28px;
     border-radius: 1rem;
     font-family: serif;
     font-style: italic;
     font-weight: 500;
-
+    font-size: 90px;
 }
 
 main .h2 {
@@ -87,51 +106,49 @@ main .h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+}
 
-    font-size: 35px;
-    font-weight: 500;
+main .h2 h2{
+
+    font-size: 50px;
+    font-weight: 600;
     font-family: sans-serif;
     font-style: italic;
 }
 
 .contenedor {
-    width: 100%;
     background-color: #eedacd;
     padding-top: 65px;
     padding-bottom: 65px;
-
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card {
-    width: 350px;
-    height: 500px;
-    margin: 2rem;
-    position: relative;
-
-
+main section .contenedor >div .carousel-inner .carousel-item .carousel-caption {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-.card a img {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+main section .contenedor >div .carousel-inner div a {
+    text-decoration: none;
+    color: white;
 }
 
-.card p {
-    position: absolute;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    top: 0;
-    right: 0;
-    border-radius: 0 1rem 0 1rem;
-    background-color: rgba(255, 255, 255, 0.596);
-    padding: 1.5px 5px 1.5px 5px;
+main section .contenedor >div .carousel-inner div a h5 {
+    background-color: rgba(0, 0, 0, 0.405);
+    padding: 6px;
+    width: 160px;
+    border-radius: .3rem;
+}
+
+main section .contenedor >div .carousel-inner div a h5:hover {
+    transform: scale(1.5);
+    background-color: white;
+    color: black;
+    font-weight: 700; 
 }
 
 /*--------------- FOOTER index---------------*/
@@ -147,45 +164,22 @@ footer {
 
 .foot {
     text-align: center;
-
+    font-family: serif;
 }
 
+.foot div h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.foot .redes p {
+    margin-bottom: 5px;
+}
 .foot .redes a {
     color: #000;
-    /* Como agrandar el tamano de los iconos? */
+    padding: 5px;
 }
-
-
-
-
-
-
-/*------------------ PERFIL | INICIO DE SESION ----------------*/
-
-.main-perfil {
-    font-family: sans-serif;
-    padding: 10rem;
-    position: relative;
-    background-color: antiquewhite;
-    height: 800px;
-
-}
-
-main .div-inicio-sesion {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 23px;
-}
-
-main #contactanos {
-    font-size: 21px;
-    padding: 12.5rem;
-    text-align: center;
-
-}
-
-
 
 
 /* -----------------------TIENDA | main----------------------- */
@@ -200,36 +194,127 @@ main #contactanos {
     height: 100vh;
 }
 
-
 .main-tienda div h2 {
     font-size: 80px;
+    font-family: serif;
     font-style: italic;
+    font-weight: 600;
     text-align: center;
     margin: 80px;
     color: rgb(0, 0, 0);
-
 }
 
+.contenedor-tienda {
+    width: 100%;
+    justify-content: space-evenly;
+    border: 0;
+}
+
+.pic-tienda {
+    width: 350px;
+    height: 500px;
+    margin: 2rem;
+    position: relative;
+}
+
+.pic-tienda a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pic-tienda a .img-top {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: 1.5s ease;
+}
+
+.pic-tienda a .img-top:hover {
+    opacity: 1;
+}
+
+.pic-tienda p {
+    position: absolute;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    top: 0;
+    right: 0;
+    border-radius: 0 1rem 0 1rem;
+    background-color: rgba(255, 255, 255, 0.596);
+    padding: 1.5px 5px 1.5px 5px;
+}
+
+
+
+/*------------------ PERFIL | INICIO DE SESION ----------------*/
+
+.main-perfil {
+    background: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.204)), url(../imagenes/fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    padding: 13rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-perfil .div-inicio-sesion {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 23px;
+    width: 500px;
+    
+}
+
+.main-perfil .div-inicio-sesion .inicio-sesion {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: white;
+    margin-bottom: 100px;
+    padding: 30px;
+    border-radius: 1rem;
+}
+
+.main-perfil .div-inicio-sesion .registrarse {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: white;
+    padding: 30px;
+    border-radius: 1rem;
+}
+
+
+main #contactanos {
+    font-size: 21px;
+    padding: 12.5rem;
+    text-align: center;
+}
 
 
 
 /* ----------------------REGISTRARSE | main---------------------- */
 
 .div-main-registro {
-    height: 75vh;
-    background-color: #eedacd;
-    display: block;
+    height: 100vh;
+    background-color: antiquewhite;
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 220px;
     font-size: 22px;
 }
 
 
 
-
 /* ---------------------ARMARIO | MAIN | GALERIA----------------- */
 
-.main-armario .fondo-armario {
+.fondo-armario {
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.206), rgba(0, 0, 0, 0.201)), url(../imagenes/fondoArmario.jpeg);
@@ -240,18 +325,17 @@ main #contactanos {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .main-armario .fondo-armario h2 {
     background-color: rgba(0, 0, 0, 0.405);
     color: white;
-    padding: 35px;
+    padding: 33px;
     border-radius: 1rem;
     font-size: 80px;
     font-family: serif;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 500; 
 }
 
 .galerias {
@@ -260,7 +344,6 @@ main #contactanos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
 }
 
 .galerias .galeria1 {
@@ -409,6 +492,7 @@ main #contactanos {
     main #contactanos {
         padding-top: 100px;
     }
+
     /* GALERIAS  |  ARMARIO */
     .galerias .galeria1 {
         margin: 0;
@@ -449,7 +533,8 @@ main #contactanos {
         font-size: 50px;
         padding: 25px;
     }
-/* GALERIAS  |  ARMARIO */
+
+    /* GALERIAS  |  ARMARIO */
     .galerias .div-h3 a {
         text-decoration: none;
         color: white;
