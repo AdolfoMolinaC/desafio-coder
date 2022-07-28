@@ -28,7 +28,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 17px;
@@ -41,6 +41,9 @@ nav ul li a {
     right: 5rem;
     color: #ffffff;
 }
+.iconos-nav .perfil form {
+    width: 350px;
+}
 
 .iconos-nav .contactanos {
     position: absolute;
@@ -52,7 +55,7 @@ nav ul li a {
 /* -------ANIMATION LOGO NAV-------- */
 
 .header:hover {
-    background-color: rgba(255, 255, 255, 0.200);
+    background-color: rgba(255, 255, 255, 0.275);
 }
 
 .header {
@@ -99,8 +102,7 @@ nav ul li a {
     font-size: 90px;
 }
 
-main .h2 {
-    background-color: rgb(233, 233, 233);
+main .h2 {  
     width: 100%;
     height: 300px;
     display: flex;
@@ -118,7 +120,7 @@ main .h2 h2{
 }
 
 .contenedor {
-    background-color: #eedacd;
+    background-color: #ffffff;
     padding-top: 65px;
     padding-bottom: 65px;
     display: flex;
@@ -154,7 +156,7 @@ main section .contenedor >div .carousel-inner div a h5:hover {
 /*--------------- FOOTER index---------------*/
 
 footer {
-    background-color: rgb(233, 233, 233);
+    background-color: #ffffff;
     width: 100%;
     height: 500px;
     display: flex;
@@ -204,10 +206,29 @@ footer {
     color: rgb(0, 0, 0);
 }
 
+.main-tienda .clases-tienda {
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding-top: 30px;
+}
+
+.main-tienda .clases-tienda button {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px !important;
+    padding: 2px 10px;
+}
+
+.main-tienda .clases-tienda button:hover {
+    transform: scale(1.3);
+    background-color: #ffffff7a;
+}
+
 .contenedor-tienda {
     width: 100%;
     justify-content: space-evenly;
     border: 0;
+    padding-top: 100px;
 }
 
 .pic-tienda {
@@ -230,7 +251,7 @@ footer {
     position: absolute;
     left: 0;
     opacity: 0;
-    transition: 1.5s ease;
+    transition: 1s ease;
 }
 
 .pic-tienda a .img-top:hover {
@@ -259,10 +280,8 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     font-family: sans-serif;
-    padding: 13rem;
     height: 100vh;
     width: 100%;
-    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -291,10 +310,13 @@ footer {
     border-radius: 1rem;
 }
 
-
-main #contactanos {
+main .contactanos {
+    background-color: rgba(0, 0, 0, 0.405);
+    border-radius: 1rem;
+    color: #ffffff;
     font-size: 21px;
-    padding: 12.5rem;
+    padding: 2.5rem 5rem 2.5rem 5rem;
+    margin: 50px;
     text-align: center;
 }
 
@@ -304,7 +326,7 @@ main #contactanos {
 
 .div-main-registro {
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: #ffffff;
     text-align: center;
     padding-top: 220px;
     font-size: 22px;
@@ -338,6 +360,13 @@ main #contactanos {
     font-weight: 500; 
 }
 
+.galeria {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+}
+
+/*
 .galerias {
     background-color: #eedacd;
     width: 100%;
@@ -345,7 +374,7 @@ main #contactanos {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
+/*
 .galerias .galeria1 {
     margin: 50px;
     display: grid;
@@ -388,7 +417,7 @@ main #contactanos {
     padding: 20px;
 }
 
-/* --Galeria 2-- */
+/* --Galeria 2-- 
 
 .galerias .galeria2 {
     margin: 50px;
@@ -406,7 +435,7 @@ main #contactanos {
 }
 
 
-/*--Galeria 3-- */
+/*--Galeria 3-- 
 .galerias .galeria3 {
     margin: 50px;
     display: grid;
@@ -423,7 +452,7 @@ main #contactanos {
 }
 
 
-/* --Galeria 4-- */
+/* --Galeria 4-- 
 .galerias .galeria4 {
     margin: 50px;
     display: grid;
@@ -438,6 +467,7 @@ main #contactanos {
     width: 100%;
     height: 100%;
 }
+ */
 
 
 /* ====================MEDIAS QUERIES=================== */
