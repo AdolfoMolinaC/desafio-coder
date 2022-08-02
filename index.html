@@ -38,7 +38,7 @@
                     <a href="Perfil/armario.html">Armario</a>
                 </li>
                 <li>
-                    <a href="Perfil/perfil.html #contactanos">Contactanos </a>
+                    <a href="Perfil/perfil.html#contactanos">Contactanos</a>
                 </li>
             </ul>
         </nav>
@@ -48,31 +48,69 @@
             <a type="button" class="dropdown perfil" data-bs-toggle="dropdown" aria-expanded="false"
                 data-bs-auto-close="outside">
                 <i class="bi bi-person"></i>
-
-                <form class="dropdown-menu p-4">
-                    <div class="mb-3">
-                        <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleDropdownFormEmail2"
-                            placeholder="email@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleDropdownFormPassword2"
-                            placeholder="Password">
-                    </div>
-                    <div class="mb-3">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                            <label class="form-check-label" for="dropdownCheck2">
-                                Remember me
-                            </label>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Ingresar</button>
-                </form>
             </a>
+            <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                        placeholder="email@example.com">
+                </div>
 
-            <a class="contactanos" href="Perfil/perfil.html #contactanos">
+                <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                        placeholder="Contraseña">
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                        <label class="form-check-label" for="dropdownCheck2">
+                            Recuerdame
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary">
+                    <a href="./Perfil/armario.html">Ingresar</a>
+                </button>
+                
+                <hr>
+                
+                <a class="dropdown-item" href="#">¿Olvidaste tu Contraseña?</a>
+
+                <hr>
+
+                <h5>Crea tu cuenta.</h5>
+
+                <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleDropdownFormEmail2"
+                        placeholder="Ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="exampleDropdownFormEmail2"
+                        placeholder="Ingresa tu Apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                        placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                        placeholder="Contraseña">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2">
+                        Acepto los terminos y condiciones
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </form>
+
+            <a class="contactanos" href="Perfil/perfil.html#contactanos">
                 <i class="bi bi-envelope"></i>
             </a>
         </div>

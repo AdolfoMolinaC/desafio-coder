@@ -41,8 +41,10 @@ nav ul li a {
     right: 5rem;
     color: #ffffff;
 }
-.iconos-nav .perfil form {
-    width: 350px;
+
+.iconos-nav form button a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .iconos-nav .contactanos {
@@ -51,6 +53,13 @@ nav ul li a {
     right: 7rem;
     color: #ffffff;
 }
+
+.iconos-nav h5 {
+    text-align: center;
+    padding: 10px;
+}
+
+
 
 /* -------ANIMATION LOGO NAV-------- */
 
@@ -112,7 +121,6 @@ main .h2 {
 }
 
 main .h2 h2{
-
     font-size: 50px;
     font-weight: 600;
     font-family: sans-serif;
@@ -269,6 +277,14 @@ footer {
     padding: 1.5px 5px 1.5px 5px;
 }
 
+.main-tienda .barra-pag div ul{
+    justify-content: center !important;   
+}
+
+.main-tienda .barra-pag div ul li a {
+    color: #000000;
+    font-weight: 500;
+}
 
 
 /*------------------ PERFIL | INICIO DE SESION ----------------*/
@@ -360,131 +376,110 @@ main .contactanos {
     font-weight: 500; 
 }
 
-.galeria {
+.main-armario .galeria {
     background-color: #ffffff;
     width: 100%;
-    height: 100vh;
+    padding: 150px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 250px;
+    gap: 10px;
 }
 
-/*
-.galerias {
-    background-color: #eedacd;
+.main-armario .galeria div img {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 17px 7px 15px 0px rgba(0, 0, 0, 0.55);
 }
-/*
-.galerias .galeria1 {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-auto-rows: 400px;
-    padding: 50px;
-    gap: 15px;
-    position: relative;
-    justify-content: center;
+
+.carousel-armario {
+    grid-column-start: span 3;
+    grid-row-start: span 3;
 }
-.galerias .galeria1 .grid-todo img {
+.carousel-armario >div .carousel-inner div img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.galerias .div-h3 {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.405);
-    color: white;
-    padding: 1.5px 5px 1.5px 5px;
-    border-radius: .6rem;
-    font-size: 30px;
-    font-family: serif;
-    font-style: italic;
-    justify-self: center;
-}
-.galerias .div-h3 a {
-    text-decoration: none;
-    color: white;
-}
-.galerias .gm1 {
-    padding: 20px;
-}
-.galerias .gm2 {
-    padding: 20px;
-}
-.galerias .gm3 {
-    padding: 20px;
-}
-.galerias .gm4 {
-    padding: 20px;
-}
-
-/* --Galeria 2-- 
-
-.galerias .galeria2 {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-auto-rows: 400px;
-    padding: 50px;
-    gap: 15px;
-    position: relative;
-    justify-content: center;
-}
-.galerias .galeria2 .grid-ropa a img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/*--Galeria 3-- 
-.galerias .galeria3 {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-auto-rows: 400px;
-    padding: 50px;
-    gap: 15px;
-    position: relative;
-    justify-content: center;
-}
-.galerias .galeria3 .grid-accesorios a img {
-    width: 100%;
-    height: 100%;
-}
-
-
-/* --Galeria 4-- 
-.galerias .galeria4 {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-auto-rows: 400px;
-    padding: 50px;
-    gap: 15px;
-    position: relative;
-    justify-content: center;
-}
-.galerias .galeria4 .grid-calzado a img {
-    width: 100%;
-    height: 100%;
-}
- */
 
 
 /* ====================MEDIAS QUERIES=================== */
 
 
-@media screen and (max-width:1400px) {
-    main .h2 {
-        font-size: 25px;
+@media screen and (max-width:1240px) {
+    main .h2 h2 {
+        font-size: 40px;
     }
+    .main-armario .galeria {
+        padding: 50px;
+        padding-bottom: 20px;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .img9{
+        display: none;
+    }
+    .img10{
+        display: none;
+    }
+    .img11{
+        display: none;
+    }
+    .img12{
+        display: none;
+    }
+    .img19{
+        display: none;
+    }
+    .img20{
+        display: none;
+    }
+    .img21{
+        display: none;
+    }
+    .img22{
+        display: none;
+    }
+    .img23{
+        display: none;
+    }
+    .img24{
+        display: none;
+    }
+    .img25{
+        display: none;
+    }
+    .img26{
+        display: none;
+    }
+    .img27{
+        display: none;
+    }
+    .img28{
+        display: none;
+    }
+    .img29{
+        display: none;
+    }
+    .img30{
+        display: none;
+    }
+    
+    .carousel-armario {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    } 
 }
 
 @media  screen and (max-width:1023px){
-    main .h2 {
-        font-size: 20px;
+    main .h2 h2 {
+        font-size: 30px;
     }
-    .fondo {
-        font-size: 50px;
+    .fondo h1 {
+        font-size: 60px;
     }
     .main-tienda div h2 {
         font-size: 60px;
@@ -492,6 +487,32 @@ main .contactanos {
     .main-armario .fondo-armario h2 {
         font-size: 60px;
     }
+    .main-armario .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .carousel-armario {
+        display: none;
+    }
+    .img13{
+        display: none;
+    }
+    .img14{
+        display: none;
+    }
+    .img15{
+        display: none;
+    }
+    .img16{
+        display: none;
+    }
+    .inicio-sesion{
+        display: none;
+    }
+    .registrarse{
+        display: none;
+    }
+
 }
 @media screen and (max-width:768px) {
     main .h2 {
@@ -510,9 +531,6 @@ main .contactanos {
         display: flex;
         flex-direction: column;
     }
-    main .div-inicio-sesion .registrarse {
-        margin-top: 50px;
-    }
     .main-perfil {
         display: flex;
         flex-direction: column;
@@ -522,38 +540,16 @@ main .contactanos {
     main #contactanos {
         padding-top: 100px;
     }
+}
 
-    /* GALERIAS  |  ARMARIO */
-    .galerias .galeria1 {
-        margin: 0;
-        padding: 0;
-        padding-top: 50px;
-        margin-top: 75px;
-    }
-    .galerias .galeria2 {
-        margin: 0;
-        padding: 0; 
-        padding-top: 50px; 
-        margin-top: 75px;
-    }
-    .galerias .galeria3 {
-        margin: 0;
-        padding: 0;  
-        padding-top: 50px;
-        margin-top: 75px;
-    }
-    .galerias .galeria4 {
-        margin: 0;
-        padding: 0;  
-        padding-top: 50px;
-        margin-top: 75px;
-    }
- }
 @media screen and (max-width:669px) {
-    .iconos-nav {
-        display: none;
+    .iconos-nav .perfil {
+        right: 2rem;
     }
-    .fondo {
+    .iconos-nav .contactanos {
+        right: 4rem;
+    }
+    .fondo h1 {
         font-size: 35px;
     }
     .fondo h1 {
@@ -563,35 +559,7 @@ main .contactanos {
         font-size: 50px;
         padding: 25px;
     }
-
-    /* GALERIAS  |  ARMARIO */
-    .galerias .div-h3 a {
-        text-decoration: none;
-        color: white;
-        font-size: 35px;  
-    }
-    .galerias .galeria2 {
-        margin-top: 20px;
-    }
-    .galerias .galeria3 {
-        margin-top: 20px;
-    }
-    .galerias .galeria4 {
-        margin-top: 20px;
-        margin-bottom: 75px;
-    }
-    .galerias .galeria1 .grid-todo {
-        display: none
-    }
-    .galerias .galeria2 .grid-ropa {
-        display: none
-    }
-    .galerias .galeria3 .grid-accesorios {
-        display: none
-    }
-    .galerias .galeria4 .grid-calzado {
-        display: none;
-    }
+    
 
  }
  @media screen and (max-width:500px) {
