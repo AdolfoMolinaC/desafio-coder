@@ -326,7 +326,7 @@ footer {
     border-radius: 1rem;
 }
 
-main .contactanos {
+.main-perfil .contactanos {
     background-color: rgba(0, 0, 0, 0.405);
     border-radius: 1rem;
     color: #ffffff;
@@ -507,25 +507,7 @@ main .contactanos {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
-    .carousel-armario {
-        display: none;
-    }
-    .img13{
-        display: none;
-    }
-    .img14{
-        display: none;
-    }
-    .img15{
-        display: none;
-    }
-    .img16{
-        display: none;
-    }
-    .inicio-sesion{
-        display: none;
-    }
-    .registrarse{
+    .carousel-armario, .img13, .img14, .img15, .img16, .inicio-sesion, .registrarse {
         display: none;
     }
 
@@ -566,24 +548,40 @@ main .contactanos {
         right: 4rem;
     }
     .fondo h1 {
-        font-size: 35px;
+        font-size: 50px;
+        padding: 25px;
     }
-    .fondo h1 {
+    .main-armario .galeria{
         padding: 25px;
     }
     .main-armario .fondo-armario h2 {
         font-size: 50px;
         padding: 25px;
     }
+    .main-perfil{
+        justify-content: center;
+        align-content: center;
+    }
+    .main-perfil .contactanos{
+    font-size: 21px;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem !important;
+    margin: 0px;
+    text-align: center;
+    }
     
 
  }
  @media screen and (max-width:500px) {
-    .fondo {
-        font-size: 25px;
+    .fondo h1 {
+        font-size: 35px;
     }
     .main-armario .fondo-armario h2 {
         font-size: 40px;
         padding: 25px;
+    }
+ }
+ @media screen and (max-width:375px) {
+    .main-armario .fondo-armario h2{
+        font-size: 30px;
     }
  }
